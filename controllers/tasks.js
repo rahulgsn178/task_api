@@ -49,6 +49,7 @@ const updateTask = async (req, res) => {
             return res.status(404).json({ message: `No task with id: ${taskID}`})
         }
         
+        // res.status(200).json({ task })
         res.status(200).json({ message: 'record updated successfully' })
 
     } catch(error) {
